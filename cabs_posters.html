@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CABS Bank Loan Posters</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Open Sans',sans-serif;
+  background:#1a1a2e;
+  padding:30px 16px;
+  display:flex;flex-direction:column;align-items:center;gap:40px;
+}
+
+/* INSTRUCTION BAR */
+.instructions{
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  color:#fff;border-radius:12px;padding:14px 20px;
+  font-size:13px;text-align:center;max-width:520px;
+  line-height:1.6;
+}
+.instructions strong{color:#ffd54f;}
+
+/* POSTER WRAPPER */
+.poster{
+  width:100%;max-width:520px;
+  border-radius:20px;overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+  position:relative;
+}
+
+/* ═══════════════════════════
+   POSTER 1 — NEED A LOAN FAST?
+═══════════════════════════ */
+.p1{background:#ffffff;}
+
+.p1-top{
+  background:#ffffff;
+  padding:28px 28px 0;
+  position:relative;
+  min-height:260px;
+  overflow:hidden;
+}
+.p1-circle{
+  position:absolute;top:-40px;right:-40px;
+  width:280px;height:280px;
+  background:linear-gradient(135deg,#1a2b5e,#243470);
+  border-radius:50%;
+  z-index:0;
+}
+.p1-logo{position:relative;z-index:1;margin-bottom:8px;}
+.p1-logo-text{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:900;color:#1a2b5e;letter-spacing:2px;}
+.p1-logo-swoosh{display:flex;flex-direction:column;gap:3px;margin-top:2px;}
+.p1-swoosh{height:3px;border-radius:2px;background:#4a9e3f;}
+.p1-swoosh:nth-child(1){width:30px;}
+.p1-swoosh:nth-child(2){width:22px;margin-left:8px;}
+.p1-swoosh:nth-child(3){width:14px;margin-left:16px;}
+.p1-tagline{font-size:11px;color:#4a9e3f;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+
+.p1-headline{position:relative;z-index:1;margin-top:16px;}
+.p1-headline h2{font-family:'Montserrat',sans-serif;font-size:34px;font-weight:900;color:#1a2b5e;line-height:1;}
+.p1-headline h2 span{color:#4a9e3f;}
+.p1-headline p{font-size:13px;color:#444;line-height:1.6;margin-top:10px;max-width:200px;}
+
+.p1-badge{
+  position:absolute;bottom:20px;right:20px;z-index:2;
+  background:#1a2b5e;border-radius:12px;padding:12px 16px;
+  text-align:center;color:#fff;
+}
+.p1-badge-icon{font-size:22px;margin-bottom:4px;}
+.p1-badge-text{font-size:10px;font-weight:700;line-height:1.3;text-transform:uppercase;letter-spacing:.5px;}
+.p1-badge-text span{color:#ffd54f;display:block;font-size:12px;}
+
+.p1-features{
+  display:flex;gap:0;
+  border-top:2px solid #f0f0f0;border-bottom:2px solid #f0f0f0;
+  margin:0 0 0;
+}
+.p1-feat{
+  flex:1;padding:14px 10px;text-align:center;
+  border-right:1px solid #f0f0f0;
+}
+.p1-feat:last-child{border-right:none;}
+.p1-feat-icon{font-size:20px;margin-bottom:4px;}
+.p1-feat-label{font-size:10px;font-weight:700;color:#1a2b5e;text-transform:uppercase;letter-spacing:.5px;}
+
+.p1-reqs{background:#f8f9ff;padding:22px 28px;}
+.p1-reqs-title{
+  text-align:center;
+  font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;
+  color:#1a2b5e;letter-spacing:2px;text-transform:uppercase;
+  background:#fff;border:2px solid #1a2b5e;border-radius:30px;
+  padding:8px 20px;display:inline-block;margin-bottom:18px;
+  width:100%;
+}
+.p1-req-grid{display:flex;gap:10px;}
+.p1-req-item{flex:1;text-align:center;}
+.p1-req-num{
+  width:40px;height:40px;border-radius:50%;
+  background:#1a2b5e;color:#fff;
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:900;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 8px;position:relative;
+}
+.p1-req-num::after{
+  content:'';position:absolute;bottom:-3px;right:-3px;
+  width:14px;height:14px;border-radius:50%;background:#4a9e3f;
+  border:2px solid #f8f9ff;
+}
+.p1-req-text{font-size:11px;color:#333;line-height:1.4;font-weight:600;}
+
+.p1-cta{
+  background:linear-gradient(135deg,#1a2b5e,#243470);
+  padding:18px 28px;display:flex;align-items:center;gap:14px;
+}
+.p1-cta-icon{
+  width:44px;height:44px;border-radius:50%;background:#4a9e3f;
+  display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;
+}
+.p1-cta-text{color:#fff;}
+.p1-cta-text strong{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:800;display:block;}
+.p1-cta-text span{font-size:12px;color:rgba(255,255,255,0.7);}
+
+/* ═══════════════════════════
+   POSTER 2 — GET QUICK LOANS
+═══════════════════════════ */
+.p2{background:#fff;}
+
+.p2-top{
+  background:#fff;
+  padding:28px 28px 24px;
+  position:relative;overflow:hidden;min-height:200px;
+}
+.p2-circle{
+  position:absolute;top:-60px;right:-60px;
+  width:320px;height:320px;
+  background:linear-gradient(135deg,#1a2b5e,#2d4080);
+  border-radius:50%;z-index:0;
+}
+.p2-content{position:relative;z-index:1;}
+.p2-logo{display:flex;align-items:center;gap:8px;margin-bottom:16px;}
+.p2-logo-text{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:900;color:#1a2b5e;letter-spacing:2px;}
+.p2-logo-swooshes{display:flex;flex-direction:column;gap:3px;}
+.p2-s{height:3px;border-radius:2px;background:#4a9e3f;}
+.p2-s:nth-child(1){width:22px;}
+.p2-s:nth-child(2){width:16px;margin-left:6px;}
+.p2-s:nth-child(3){width:10px;margin-left:12px;}
+
+.p2-h1{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:900;color:#1a2b5e;line-height:1.1;}
+.p2-h1 span{color:#4a9e3f;}
+.p2-pill{
+  display:inline-block;background:#1a2b5e;color:#fff;
+  border-radius:8px;padding:6px 16px;
+  font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;
+  margin:8px 0;
+}
+.p2-pill span{color:#ffd54f;}
+.p2-sub{font-size:13px;color:#333;line-height:1.5;max-width:220px;}
+.p2-sub strong{color:#1a2b5e;}
+
+.p2-badge{
+  position:absolute;top:20px;right:20px;z-index:2;
+  width:80px;height:80px;border-radius:50%;
+  border:3px solid #1a2b5e;background:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+}
+.p2-badge-top{font-size:9px;font-weight:800;color:#1a2b5e;text-transform:uppercase;letter-spacing:.5px;line-height:1.2;}
+.p2-badge-icon{font-size:18px;}
+
+.p2-features{padding:0 28px;margin-bottom:20px;}
+.p2-feat-item{
+  display:flex;align-items:center;gap:14px;
+  padding:10px 0;border-bottom:1px solid #f0f0f0;
+}
+.p2-feat-item:last-child{border-bottom:none;}
+.p2-feat-icon-box{
+  width:36px;height:36px;border-radius:8px;
+  background:#1a2b5e;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;flex-shrink:0;
+}
+.p2-feat-label{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:#1a2b5e;display:block;}
+.p2-feat-desc{font-size:11px;color:#777;}
+
+.p2-amount-box{
+  margin:0 28px 20px;
+  background:linear-gradient(135deg,#f8f9ff,#eef0ff);
+  border:2px solid #1a2b5e;border-radius:14px;
+  padding:16px 20px;display:flex;align-items:center;gap:16px;
+}
+.p2-amount-icon{font-size:32px;}
+.p2-amount-text{}
+.p2-amount-label{font-size:11px;color:#777;font-weight:600;text-transform:uppercase;letter-spacing:.5px;}
+.p2-amount-value{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;color:#1a2b5e;}
+.p2-amount-value span{color:#4a9e3f;}
+
+.p2-cta{
+  background:linear-gradient(135deg,#4a9e3f,#3d8534);
+  margin:0 28px 28px;border-radius:12px;
+  padding:16px 20px;text-align:center;color:#fff;
+}
+.p2-cta strong{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:800;display:block;}
+.p2-cta span{font-size:12px;opacity:.9;}
+
+/* ═══════════════════════════
+   POSTER 3 — REQUIREMENTS
+═══════════════════════════ */
+.p3{background:#1a2b5e;}
+
+.p3-header{
+  padding:28px 28px 20px;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.p3-logo{display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+.p3-logo-box{
+  background:#fff;border-radius:10px;padding:6px 12px;
+  display:flex;align-items:center;gap:6px;
+}
+.p3-logo-text{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:#1a2b5e;letter-spacing:2px;}
+.p3-logo-swooshes{display:flex;flex-direction:column;gap:2px;}
+.p3-ss{height:3px;border-radius:2px;background:#4a9e3f;}
+.p3-ss:nth-child(1){width:18px;}
+.p3-ss:nth-child(2){width:13px;margin-left:5px;}
+.p3-ss:nth-child(3){width:8px;margin-left:10px;}
+.p3-badge2{
+  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);
+  color:#ffd54f;padding:5px 14px;border-radius:20px;
+  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+}
+
+.p3-headline{color:#fff;}
+.p3-headline h2{font-family:'Montserrat',sans-serif;font-size:32px;font-weight:900;line-height:1.1;}
+.p3-headline h2 em{color:#ffd54f;font-style:normal;}
+.p3-headline p{font-size:13px;color:rgba(255,255,255,0.7);margin-top:8px;line-height:1.6;}
+
+.p3-reqs{padding:24px 28px;}
+.p3-reqs-label{
+  font-size:11px;font-weight:700;color:#ffd54f;
+  text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.p3-reqs-label::before{content:'';width:20px;height:2px;background:#ffd54f;}
+.p3-reqs-label::after{content:'';flex:1;height:2px;background:rgba(255,213,79,0.3);}
+
+.p3-req-card{
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:14px;padding:16px 18px;
+  margin-bottom:12px;
+  display:flex;align-items:flex-start;gap:14px;
+}
+.p3-req-num{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Montserrat',sans-serif;font-size:15px;font-weight:900;
+}
+.p3-req-num.n1{background:#4a9e3f;color:#fff;}
+.p3-req-num.n2{background:#ffd54f;color:#1a2b5e;}
+.p3-req-title{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;color:#fff;margin-bottom:4px;}
+.p3-req-desc{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.5;}
+
+.p3-amount{
+  margin:0 28px;
+  background:linear-gradient(135deg,#4a9e3f,#3d8534);
+  border-radius:14px;padding:18px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:20px;
+}
+.p3-amount-left{}
+.p3-amount-label2{font-size:11px;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:.5px;font-weight:600;}
+.p3-amount-range{font-family:'Montserrat',sans-serif;font-size:26px;font-weight:900;color:#fff;}
+.p3-amount-icon2{font-size:36px;}
+
+.p3-features{display:flex;gap:10px;padding:0 28px 28px;}
+.p3-feat-box{
+  flex:1;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);
+  border-radius:12px;padding:14px 10px;text-align:center;
+}
+.p3-feat-emoji{font-size:22px;margin-bottom:6px;}
+.p3-feat-txt{font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.3;}
+
+/* ═══════════════════════════
+   POSTER 4 — DO YOU QUALIFY?
+═══════════════════════════ */
+.p4{background:#fff;}
+
+.p4-top{
+  background:linear-gradient(135deg,#1a2b5e 0%,#2d4080 100%);
+  padding:28px 28px 32px;position:relative;overflow:hidden;
+}
+.p4-top::after{
+  content:'';position:absolute;bottom:-30px;left:0;right:0;height:60px;
+  background:#fff;border-radius:50% 50% 0 0 / 30px 30px 0 0;
+}
+.p4-logo2{display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+.p4-logo-box2{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:10px;padding:6px 14px;display:flex;align-items:center;gap:6px;}
+.p4-logo-text2{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:#fff;letter-spacing:2px;}
+.p4-ls{display:flex;flex-direction:column;gap:2px;}
+.p4-ll{height:3px;border-radius:2px;background:#4a9e3f;}
+.p4-ll:nth-child(1){width:18px;}
+.p4-ll:nth-child(2){width:13px;margin-left:5px;}
+.p4-ll:nth-child(3){width:8px;margin-left:10px;}
+
+.p4-headline2{color:#fff;text-align:center;}
+.p4-question{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:900;line-height:1.1;}
+.p4-question em{color:#ffd54f;font-style:normal;display:block;}
+.p4-sub2{font-size:13px;color:rgba(255,255,255,0.75);margin-top:8px;}
+
+.p4-body{padding:36px 28px 24px;}
+.p4-checklist-title{
+  font-size:11px;font-weight:700;color:#4a9e3f;
+  text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.p4-checklist-title::before{content:'';width:20px;height:2px;background:#4a9e3f;}
+.p4-checklist-title::after{content:'';flex:1;height:2px;background:#e0f0de;}
+
+.p4-check{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:12px 0;border-bottom:1px solid #f0f0f0;
+}
+.p4-check:last-child{border-bottom:none;}
+.p4-check-icon{
+  width:28px;height:28px;border-radius:50%;
+  background:#4a9e3f;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;flex-shrink:0;margin-top:1px;
+}
+.p4-check-title{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;color:#1a2b5e;display:block;margin-bottom:2px;}
+.p4-check-desc{font-size:12px;color:#666;line-height:1.5;}
+
+.p4-amount2{
+  background:linear-gradient(135deg,#f8f9ff,#eef0ff);
+  border:2px solid #1a2b5e;border-radius:14px;
+  padding:18px 20px;text-align:center;margin-bottom:20px;
+}
+.p4-amount-label3{font-size:11px;font-weight:700;color:#777;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;}
+.p4-amount-range2{font-family:'Montserrat',sans-serif;font-size:28px;font-weight:900;color:#1a2b5e;}
+.p4-amount-range2 span{color:#4a9e3f;}
+.p4-amount-note{font-size:11px;color:#777;margin-top:4px;}
+
+.p4-cta2{
+  background:linear-gradient(135deg,#1a2b5e,#243470);
+  border-radius:14px;padding:18px 24px;
+  display:flex;align-items:center;gap:16px;
+}
+.p4-cta-icon2{font-size:28px;}
+.p4-cta-content{}
+.p4-cta-title{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:900;color:#fff;display:block;margin-bottom:2px;}
+.p4-cta-desc{font-size:12px;color:rgba(255,255,255,0.7);}
+.p4-cta-arrow{
+  margin-left:auto;width:36px;height:36px;border-radius:50%;
+  background:rgba(255,255,255,0.15);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:18px;flex-shrink:0;
+}
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  📸 <strong>How to save your posters:</strong> Open this page on your phone, scroll to each poster, take a screenshot. You'll have 4 ready-to-share images!
+</div>
+
+<!-- ═══════════════ POSTER 1 ═══════════════ -->
+<div class="poster p1">
+  <div class="p1-top">
+    <div class="p1-circle"></div>
+    <div class="p1-logo">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div class="logo-text" style="font-family:'Montserrat',sans-serif;font-size:28px;font-weight:900;color:#1a2b5e;letter-spacing:2px;">CABS</div>
+        <div class="p1-logo-swoosh">
+          <div class="p1-swoosh"></div>
+          <div class="p1-swoosh"></div>
+          <div class="p1-swoosh"></div>
+        </div>
+      </div>
+      <div class="p1-tagline">A Member of the Old Mutual Group</div>
+    </div>
+    <div class="p1-headline">
+      <h2>NEED A<br/><span>QUICK LOAN</span><br/>FAST?</h2>
+      <p>With CABS Bank you can apply for a loan from <strong>$100 to $50,000</strong> and get funds straight to your account.</p>
+    </div>
+    <div class="p1-badge">
+      <div class="p1-badge-icon">🏦</div>
+      <div class="p1-badge-text">FUNDS SENT<br/><span>TO YOUR ACCOUNT</span></div>
+    </div>
+  </div>
+
+  <div class="p1-features">
+    <div class="p1-feat">
+      <div class="p1-feat-icon">⚡</div>
+      <div class="p1-feat-label">Fast Approval</div>
+    </div>
+    <div class="p1-feat">
+      <div class="p1-feat-icon">📋</div>
+      <div class="p1-feat-label">No Paperwork</div>
+    </div>
+    <div class="p1-feat">
+      <div class="p1-feat-icon">🎧</div>
+      <div class="p1-feat-label">Instant Support</div>
+    </div>
+  </div>
+
+  <div class="p1-reqs">
+    <div class="p1-reqs-title">REQUIREMENTS</div>
+    <div class="p1-req-grid">
+      <div class="p1-req-item">
+        <div class="p1-req-num">1</div>
+        <div class="p1-req-text">Active CABS account for at least 6 months</div>
+      </div>
+      <div class="p1-req-item">
+        <div class="p1-req-num">2</div>
+        <div class="p1-req-text">10% of loan amount as account balance</div>
+      </div>
+      <div class="p1-req-item">
+        <div class="p1-req-num">3</div>
+        <div class="p1-req-text">Regular account transactions required</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p1-cta">
+    <div class="p1-cta-icon">✅</div>
+    <div class="p1-cta-text">
+      <strong>DO YOU MEET THESE QUALIFICATIONS?</strong>
+      <span>Apply now and get your loan today!</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════ POSTER 2 ═══════════════ -->
+<div class="poster p2">
+  <div class="p2-top">
+    <div class="p2-circle"></div>
+    <div class="p2-content">
+      <div class="p2-logo">
+        <div class="p2-logo-text">CABS</div>
+        <div class="p2-logo-swooshes">
+          <div class="p2-s"></div>
+          <div class="p2-s"></div>
+          <div class="p2-s"></div>
+        </div>
+      </div>
+      <div class="p2-h1">Get Quick<br/><span>CABS Loans</span></div>
+      <div class="p2-pill">in Minutes! <span>⚡</span></div>
+      <p class="p2-sub">Instant Loans. Instant Solutions.<br/><strong>Right into your CABS Account.</strong></p>
+    </div>
+    <div class="p2-badge">
+      <div class="p2-badge-top">CASH IN<br/>MINUTES</div>
+      <div class="p2-badge-icon">⏱️</div>
+    </div>
+  </div>
+
+  <div class="p2-features">
+    <div class="p2-feat-item">
+      <div class="p2-feat-icon-box">⚡</div>
+      <div><span class="p2-feat-label">FAST APPROVAL</span><span class="p2-feat-desc">within minutes, no waiting</span></div>
+    </div>
+    <div class="p2-feat-item">
+      <div class="p2-feat-icon-box">📋</div>
+      <div><span class="p2-feat-label">NO PAPERWORK</span><span class="p2-feat-desc">no long queues, apply online</span></div>
+    </div>
+    <div class="p2-feat-item">
+      <div class="p2-feat-icon-box">🛡️</div>
+      <div><span class="p2-feat-label">SAFE & RELIABLE</span><span class="p2-feat-desc">100% secure, trusted bank</span></div>
+    </div>
+    <div class="p2-feat-item">
+      <div class="p2-feat-icon-box">📅</div>
+      <div><span class="p2-feat-label">EASY REPAYMENT</span><span class="p2-feat-desc">flexible terms, your schedule</span></div>
+    </div>
+  </div>
+
+  <div class="p2-amount-box">
+    <div class="p2-amount-icon">💵</div>
+    <div class="p2-amount-text">
+      <div class="p2-amount-label">Loan Range</div>
+      <div class="p2-amount-value">$100 — <span>$50,000</span></div>
+    </div>
+  </div>
+
+  <div class="p2-cta">
+    <strong>APPLY NOW — GET FUNDED TODAY</strong>
+    <span>Visit your nearest CABS branch or apply online</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════ POSTER 3 ═══════════════ -->
+<div class="poster p3">
+  <div class="p3-header">
+    <div class="p3-logo">
+      <div class="p3-logo-box">
+        <div class="p3-logo-text">CABS</div>
+        <div class="p3-logo-swooshes">
+          <div class="p3-ss"></div>
+          <div class="p3-ss"></div>
+          <div class="p3-ss"></div>
+        </div>
+      </div>
+      <div class="p3-badge2">Bank Loans</div>
+    </div>
+    <div class="p3-headline">
+      <h2>Loans from<br/><em>$100 to $50,000</em></h2>
+      <p>Fast. Secure. No paperwork. Applied directly through your CABS account.</p>
+    </div>
+  </div>
+
+  <div class="p3-reqs">
+    <div class="p3-reqs-label">Requirements</div>
+    <div class="p3-req-card">
+      <div class="p3-req-num n1">1</div>
+      <div>
+        <div class="p3-req-title">Active CABS Account — 6+ Months</div>
+        <div class="p3-req-desc">Your CABS account must have been active and regularly used for at least 6 months to qualify.</div>
+      </div>
+    </div>
+    <div class="p3-req-card">
+      <div class="p3-req-num n2">2</div>
+      <div>
+        <div class="p3-req-title">10% Account Balance</div>
+        <div class="p3-req-desc">You must have at least 10% of the loan amount you are applying for as your current account balance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p3-amount">
+    <div class="p3-amount-left">
+      <div class="p3-amount-label2">Available Loan Range</div>
+      <div class="p3-amount-range">$100 — $50,000</div>
+    </div>
+    <div class="p3-amount-icon2">💰</div>
+  </div>
+
+  <div class="p3-features">
+    <div class="p3-feat-box">
+      <div class="p3-feat-emoji">⚡</div>
+      <div class="p3-feat-txt">Fast Approval</div>
+    </div>
+    <div class="p3-feat-box">
+      <div class="p3-feat-emoji">📋</div>
+      <div class="p3-feat-txt">No Paperwork</div>
+    </div>
+    <div class="p3-feat-box">
+      <div class="p3-feat-emoji">🔒</div>
+      <div class="p3-feat-txt">100% Secure</div>
+    </div>
+    <div class="p3-feat-box">
+      <div class="p3-feat-emoji">💳</div>
+      <div class="p3-feat-txt">Flexible Terms</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════ POSTER 4 ═══════════════ -->
+<div class="poster p4">
+  <div class="p4-top">
+    <div class="p4-logo2">
+      <div class="p4-logo-box2">
+        <div class="p4-logo-text2">CABS</div>
+        <div class="p4-ls">
+          <div class="p4-ll"></div>
+          <div class="p4-ll"></div>
+          <div class="p4-ll"></div>
+        </div>
+      </div>
+    </div>
+    <div class="p4-headline2">
+      <div class="p4-question">DO YOU QUALIFY<br/><em>FOR A CABS LOAN?</em></div>
+      <div class="p4-sub2">Check the requirements below and apply today</div>
+    </div>
+  </div>
+
+  <div class="p4-body">
+    <div class="p4-checklist-title">Eligibility Checklist</div>
+
+    <div class="p4-check">
+      <div class="p4-check-icon">✓</div>
+      <div>
+        <span class="p4-check-title">Active CABS Bank Account</span>
+        <span class="p4-check-desc">Your account must be at least 6 months old and actively used with regular transactions.</span>
+      </div>
+    </div>
+    <div class="p4-check">
+      <div class="p4-check-icon">✓</div>
+      <div>
+        <span class="p4-check-title">10% Minimum Balance</span>
+        <span class="p4-check-desc">Maintain at least 10% of your desired loan amount as your current account balance.</span>
+      </div>
+    </div>
+    <div class="p4-check">
+      <div class="p4-check-icon">✓</div>
+      <div>
+        <span class="p4-check-title">Fast Approval — No Paperwork</span>
+        <span class="p4-check-desc">If you meet the above requirements, your loan is approved quickly with zero paperwork.</span>
+      </div>
+    </div>
+
+    <br/>
+
+    <div class="p4-amount2">
+      <div class="p4-amount-label3">Loan Amount Available</div>
+      <div class="p4-amount-range2">$100 <span>—</span> $50,000</div>
+      <div class="p4-amount-note">In US Dollars · Straight to your CABS Account</div>
+    </div>
+
+    <div class="p4-cta2">
+      <div class="p4-cta-icon2">🏦</div>
+      <div class="p4-cta-content">
+        <span class="p4-cta-title">APPLY NOW TODAY</span>
+        <span class="p4-cta-desc">Fast approval · No queues · No paperwork</span>
+      </div>
+      <div class="p4-cta-arrow">→</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
